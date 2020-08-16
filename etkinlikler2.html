@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+ body {
+    background-image: url('arkaplan.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 70%;
+}
+a:link {
+    color: LightGray;
+    text-decoration: none;
+}
+a:visited {
+    color: LightGray;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    background-color: LightGray;
+    text-decoration: underline;
+}
+a:active {
+    color: LightGray;
+}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  /*  background-color: #555;   */
+    color: #404040;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+   /* background-color: #777;      */
+}
+
+ /*Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+/*#Etkinlikler {background-color: black;}
+#Projeler {background-color: black;}
+#Eðitimler {background-color: black;}           */
+
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Etkinlikler', this, 'black')">Etkinlikler</button>
+<button class="tablink" onclick="openPage('Projeler', this, 'black')" id="defaultOpen">Projeler</button>
+<button class="tablink" onclick="openPage('Eðitimler', this, 'black')">Eðitimler</button>
+
+
+<div id="Etkinlikler" class="tabcontent">
+    <b>
+
+
+
+
+    </b>
+    <hr>
+    <h3>Etkinlikler</h3>
+    <p><a href="file:///C:/Users/ASUS/OneDrive/Resimler/PhotoDirector/Masa%C3%BCst%C3%BC/htmlProject/kad%C4%B1nlartiyatrosu.html">Kadýnlar Tiyatrosu</a></p>
+<p><a href="https://www.google.com/">Hobi Bahçesi</a></p>
+</div>
+
+<div id="Projeler" class="tabcontent">
+     <b>
+
+
+
+
+    </b>
+     <hr>
+    <h3>Projeler</h3>
+    <p><a href="file:///C:/Users/ASUS/OneDrive/Resimler/PhotoDirector/Masa%C3%BCst%C3%BC/htmlProject/projeler.html">Kadýnlar Iþýðýyla Madeni Aydýnlatýyor</a></p>
+
+</div>
+
+<div id="Eðitimler" class="tabcontent">
+    <b>
+
+    </b>
+    <hr>
+    <h3>Eðitimler</h3>
+    <p><a href="file:///C:/Users/ASUS/OneDrive/Resimler/PhotoDirector/Masa%C3%BCst%C3%BC/htmlProject/e%C4%9Fitimler1.html">Toplumsal Cinsiyet Eþitliði Eðitimi</a></p>
+<p><a href="file:///C:/Users/ASUS/OneDrive/Resimler/PhotoDirector/Masa%C3%BCst%C3%BC/htmlProject/e%C4%9Fitimler2.html">Toplumsal Cinsiyet ve Hukuk </a></p>
+<p><a href="file:///C:/Users/ASUS/OneDrive/Resimler/PhotoDirector/Masa%C3%BCst%C3%BC/htmlProject/e%C4%9Fitimler3.html">Toplumsal Cinsiyet ve Medya Eðitimi</a></p>
+<p><a href="file:///C:/Users/ASUS/OneDrive/Resimler/PhotoDirector/Masa%C3%BCst%C3%BC/htmlProject/e%C4%9Fitimler4.html">Ýþ Saðlýðý ve Güvenliði Eðitimi  </a></p>
+<p><a href="file:///C:/Users/ASUS/OneDrive/Resimler/PhotoDirector/Masa%C3%BCst%C3%BC/htmlProject/e%C4%9Fitimler5.html">Bel ve Boyun Okulu</a></p>
+
+</div>
+    <div class="footer-widget">
+
+                        <aside id="wpcw_contact-4" class="widget wpcw-widgets wpcw-widget-contact"><h4 class="widget-title">Bizimle Ýletiþim Kurun</h4><ul><li class="has-label"><strong>E-posta</strong><br><div><a href="mailto:&#105;n&#102;&#111;&#64;m&#97;d&#101;&#110;cik&#97;&#100;inl&#97;r.&#111;r&#103;">&#105;n&#102;&#111;&#64;m&#97;d&#101;&#110;cik&#97;&#100;inl&#97;r.&#111;r&#103;</a></div></li></ul></aside>
+                </div>
+
+    </div>
+
+            </div><!-- .site-footer-inner -->
+
+        </footer><!-- #colophon -->
+
+
+<div class="site-info-wrapper">
+
+    <div class="site-info">
+
+        <div class="site-info-inner">
+
+
+<div class="site-info-text">
+
+    <a href="http://www.medyakiti.com" target="_blank">medyakiti</a>
+</div>
+
+        </div><!-- .site-info-inner -->
+
+    </div><!-- .site-info -->
+
+</div><!-- .site-info-wrapper -->
+
+    </div><!-- #page -->
+
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
